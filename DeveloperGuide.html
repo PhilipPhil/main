@@ -1303,10 +1303,10 @@ Do take a look at <a href="#Design-Ui">Section 3.2, &#8220;UI component&#8221;</
 <div class="ulist">
 <ul>
 <li>
-<p>The tag labels are created inside <a href="https://github.com/cs2103-ay1819s2-w15-1/main/src/main/java/seedu/address/ui/PersonCard.java">the <code>PersonCard</code> constructor</a> (<code>new Label(tag.tagName)</code>). <a href="https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Label.html">JavaFX&#8217;s <code>Label</code> class</a> allows you to modify the style of each Label, such as changing its color.</p>
+<p>The tag labels are created inside <a href="https://github.com/cs2103-ay1819s2-w15-1/main/src/main/java/seedu/address/ui/PersonCard.java">the <code>PersonCard</code> constructor</a> (<code>new Label(tag.tagName)</code>). <a href="https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Label.html">JavaFX&#8217;s <code>Label</code> class</a> allows you to modify the style of each Label, such as changing its colorValue.</p>
 </li>
 <li>
-<p>Use the .css attribute <code>-fx-background-color</code> to add a color.</p>
+<p>Use the .css attribute <code>-fx-background-colorValue</code> to add a colorValue.</p>
 </li>
 <li>
 <p>You may wish to modify <a href="https://github.com/cs2103-ay1819s2-w15-1/main/src/main/resources/view/DarkTheme.css"><code>DarkTheme.css</code></a> to include some pre-defined colors using css, especially if you have experience with web-based css.</p>
@@ -1319,14 +1319,14 @@ Do take a look at <a href="#Design-Ui">Section 3.2, &#8220;UI component&#8221;</
 <div class="ulist">
 <ul>
 <li>
-<p>You can modify the existing test methods for <code>PersonCard</code> 's to include testing the tag&#8217;s color as well.</p>
+<p>You can modify the existing test methods for <code>PersonCard</code> 's to include testing the tag&#8217;s colorValue as well.</p>
 </li>
 <li>
 <p>See this <a href="https://github.com/se-edu/addressbook-level4/pull/798">PR</a> for the full solution.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>The PR uses the hash code of the tag names to generate a color. This is deliberately designed to ensure consistent colors each time the application runs. You may wish to expand on this design to include additional features, such as allowing users to set their own tag colors, and directly saving the colors to storage, so that tags retain their colors even if the hash code algorithm changes.</p>
+<p>The PR uses the hash code of the tag names to generate a colorValue. This is deliberately designed to ensure consistent colors each time the application runs. You may wish to expand on this design to include additional features, such as allowing users to set their own tag colors, and directly saving the colors to storage, so that tags retain their colors even if the hash code algorithm changes.</p>
 </li>
 </ul>
 </div>
@@ -1389,7 +1389,7 @@ Do take a look at <a href="#Design-Ui">Section 3.2, &#8220;UI component&#8221;</
 <div class="ulist">
 <ul>
 <li>
-<p>The unit tests for <code>ResultDisplay</code> can be modified to include verification of the color.</p>
+<p>The unit tests for <code>ResultDisplay</code> can be modified to include verification of the colorValue.</p>
 </li>
 <li>
 <p>The system tests <a href="https://github.com/cs2103-ay1819s2-w15-1/main/src/test/java/systemtests/AddressBookSystemTest.java"><code>AddressBookSystemTest#assertCommandBoxShowsDefaultStyle() and AddressBookSystemTest#assertCommandBoxShowsErrorStyle()</code></a> to include verification for <code>ResultDisplay</code> as well.</p>
@@ -1918,7 +1918,7 @@ for <code>RemarkCommandParser</code>.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>* * *</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">user</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">add matching relation between clothings (including accessories)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">define matching color combinations that are outside of the default combinations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">define matching colorValue combinations that are outside of the default combinations</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>* *</code></p></td>
@@ -2250,4 +2250,4 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-02-25 02:38:48 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-02-25 04:21:06 UTC</div></div></div></body></html>
